@@ -51,6 +51,10 @@ If you use this work, please cite:
 }
 ```
 
+## Acknowledgments
+
+The block expansion implementation in `Expansion-Script/` is based on [LLaMA-Pro](https://github.com/TencentARC/LLaMA-Pro) by TencentARC.
+
 ## License
 
 Research and academic use only.
