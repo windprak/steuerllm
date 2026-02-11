@@ -15,6 +15,8 @@ This repository contains the complete pipeline for developing a specialized larg
 
 ### Data-Generation
 
+<img align="right" width="400" src="figures/Data_Gen.png">
+
 **Pretraining-Filter**: Domain-specific filtering pipeline for identifying and extracting tax-related content from large-scale web corpora. Implements multi-worker architecture for efficient document classification and preprocessing.
 
 **Instruct-Generation**: Implementation of the Water Fountain Algorithm for automated generation of instruction-tuning datasets. Comprises multiple generation strategies:
@@ -23,8 +25,6 @@ This repository contains the complete pipeline for developing a specialized larg
 - Specialized modules for accounting scenarios and legal commentary integration
 
 The pipeline integrates semantic search (SearXNG), embedding-based retrieval, and LLM-driven synthesis to produce domain-specific question-answer pairs from German tax code (EStG, AO, KStG, etc.).
-
-![Data Generation Pipeline](figures/Data_Gen.png)
 
 ### Training
 
