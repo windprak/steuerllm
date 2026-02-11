@@ -1,0 +1,29 @@
+# Test Configuration for Mock LLM Server
+
+api:
+  base_url: "http://localhost:6000"
+  api_key: "test-api-key"
+  model: "mock-model"
+  timeout: 30
+  max_retries: 2
+
+worker:
+  max_concurrent: 3
+  temperature: 0.3
+  top_p: 0.8
+
+data:
+  input_dir: "tests"
+  output_dir: "tests/output"
+  chunk_size_mb: 1
+  skip_processed: true
+
+orchestrator:
+  enabled: false
+  endpoints: []
+  workers_per_endpoint: 1
+  chunks_per_worker: 1
+
+logging:
+  level: "INFO"
+  log_dir: "tests/logs"

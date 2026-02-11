@@ -1,0 +1,7 @@
+requests
+numpy
+beautifulsoup4
+PyPDF2>=3.0.1
+nltk
+torch
+tqdm

@@ -1,0 +1,10 @@
+torch==2.5.1+cu124
+torchvision==0.20.1+cu124
+torchaudio==2.5.1+cu124
+transformers==4.46.3
+tokenizers==0.20.3
+scikit-learn
+nltk
+requests
+PyPDF2
+beautifulsoup4

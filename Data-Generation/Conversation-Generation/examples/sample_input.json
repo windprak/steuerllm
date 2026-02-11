@@ -1,0 +1,20 @@
+[
+  {
+    "_recordid": "example_001",
+    "Volltext": "Dies ist ein Beispieltext über steuerrechtliche Themen. Er enthält relevante Informationen, die als Basis für die Generierung von Konversationen dienen.",
+    "Themengebiet": "Steuerrecht",
+    "TopicFilter": "Einkommensteuer",
+    "Titel": "Beispieldokument zur Einkommensteuer",
+    "Autor": "Max Mustermann",
+    "text": "Kurze Zusammenfassung des Dokuments"
+  },
+  {
+    "_recordid": "example_002",
+    "Volltext": "Ein weiteres Beispiel mit steuerrechtlichen Informationen für die Konversationsgenerierung.",
+    "Themengebiet": "Steuerrecht",
+    "TopicFilter": "Umsatzsteuer",
+    "Titel": "Umsatzsteuer Grundlagen",
+    "Autor": "Erika Musterfrau",
+    "text": "Grundlegende Informationen zur Umsatzsteuer"
+  }
+]

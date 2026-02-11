@@ -1,0 +1,29 @@
+[
+  {
+    "_recordid": "test_001",
+    "Volltext": "Die Einkommensteuer ist eine direkte Steuer auf das Einkommen natürlicher Personen. Sie wird auf alle Einkünfte erhoben, die innerhalb eines Kalenderjahres erzielt werden. Die Bemessungsgrundlage bildet das zu versteuernde Einkommen, das nach Abzug von Sonderausgaben und außergewöhnlichen Belastungen ermittelt wird.",
+    "Themengebiet": "Einkommensteuer",
+    "TopicFilter": "Grundlagen",
+    "Titel": "Grundlagen der Einkommensteuer",
+    "Autor": "Bundesministerium der Finanzen",
+    "text": "Einführung in die Einkommensteuer"
+  },
+  {
+    "_recordid": "test_002",
+    "Volltext": "Bei der Umsatzsteuer handelt es sich um eine Verkehrsteuer, die auf den Austausch von Waren und Dienstleistungen erhoben wird. Der Regelsteuersatz beträgt 19%, während für bestimmte Güter und Dienstleistungen ein ermäßigter Steuersatz von 7% gilt. Unternehmer sind verpflichtet, die Umsatzsteuer auf ihren Rechnungen gesondert auszuweisen.",
+    "Themengebiet": "Umsatzsteuer",
+    "TopicFilter": "Steuersätze",
+    "Titel": "Umsatzsteuersätze in Deutschland",
+    "Autor": "Bundeszentralamt für Steuern",
+    "text": "Übersicht über die Umsatzsteuersätze"
+  },
+  {
+    "_recordid": "test_003",
+    "Volltext": "Die Abschreibung ermöglicht es Unternehmern, die Anschaffungs- oder Herstellungskosten eines Wirtschaftsguts über dessen Nutzungsdauer steuerlich geltend zu machen. Bei beweglichen Wirtschaftsgütern des Anlagevermögens kann die lineare oder degressive Abschreibung gewählt werden. Die Nutzungsdauer richtet sich nach den amtlichen AfA-Tabellen.",
+    "Themengebiet": "Betriebliche Steuern",
+    "TopicFilter": "Abschreibungen",
+    "Titel": "Abschreibungsmöglichkeiten für Unternehmen",
+    "Autor": "IHK Deutschland",
+    "text": "Leitfaden zur betrieblichen Abschreibung"
+  }
+]

@@ -1,0 +1,9 @@
+PyPDF2
+beautifulsoup4
+numpy
+ollama
+pydantic
+requests
+scikit-learn
+openai
+nltk

@@ -1,0 +1,15 @@
+{   
+    "script": "",
+    "input_file": "",
+    "output_file": "",
+    "endpoints": [
+        "http://10.0.0.1:1234/v1/chat/completions",
+        "http://10.0.0.2:1234/v1/chat/completions",
+        "http://10.0.0.3:1234/v1/chat/completions"
+    ],
+    "num_jobs": 10,
+    "model": "",
+    "amount_questions": 1,
+    "flush_interval": 180,
+    "reps": 1
+}

@@ -1,0 +1,33 @@
+{
+    "global_settings": {
+        "data_dir": "",
+        "max_concurrent_jobs": "2",
+        "script": "hybrid_search_Standard.py"
+    },
+    "jobs": [
+        {
+            "job_id": "job1",
+            "enabled": true,
+            "fau_endpoint": "",
+            "searxng_endpoint": "http://localhost:8080",
+            "input_file": "",
+            "output_file": "",
+            "embeddings_cache": "",
+            "max_output_file_size_gb": "",
+            "model": "",
+            "flush_settings": {
+                "qa_results_interval_minutes": "",
+                "questions_interval_minutes": ""
+            },
+            "runtime_settings": {
+                "duration_hours": "",
+                "sleep_after_question_seconds": "",
+                "sleep_after_generation_seconds": ""
+            },
+            "resource_limits": {
+                "max_memory_gb": "",
+                "max_cpu_percent": ""
+            }
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Data files
+data/input/*
+data/output/*
+data/chunks/*
+data/final/*
+inputdata/*
+outputdir*/
+
+# Keep directory structure
+!data/input/.gitkeep
+!data/output/.gitkeep
+!data/final/.gitkeep
+
+# Logs
+logs/
+*.log
+
+# Configuration (keep example, ignore actual config)
+config/config.yaml
+
+# Temporary files
+*.jsonl
+*.json
+!examples/*.json
+!tests/*.json
+
+# Output files
+out.jsonl
+output_*.jsonl
+chunk*.json
+enriched_*.jsonl
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Test files
+results.txt
