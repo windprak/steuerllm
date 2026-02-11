@@ -36,11 +36,6 @@ SLURM-based training configurations for distributed model training using Axolotl
 - DeepSpeed ZeRO-3 optimization for multi-node H100 clusters
 - FSDP2-compatible distributed training setup
 
-### Benchmark
-
-Evaluation framework for assessing model performance on German tax law examination questions. The benchmark repository is available at [https://github.com/windprak/steuerllm_benchmark](https://github.com/windprak/steuerllm_benchmark).
-
-
 ## Methodology
 
 The training procedure follows a two-stage approach: (1) continual pretraining on domain-filtered web data to adapt base model representations to tax-specific terminology and concepts, followed by (2) instruction fine-tuning on synthetically generated question-answer pairs derived from primary legal sources. The Water Fountain Algorithm employs retrieval-augmented generation with semantic ranking to ensure factual grounding and contextual relevance.
