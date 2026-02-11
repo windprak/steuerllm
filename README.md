@@ -1,4 +1,4 @@
-# SteuerLLM: Domain-Specific Language Model for German Tax Law
+# SteuerLLM: Local specialized large language model for German tax law analysis
 
 ## Overview
 
@@ -25,9 +25,6 @@ SLURM-based training configurations for distributed model training using Axolotl
 - DeepSpeed ZeRO-3 optimization for multi-node H100 clusters
 - FSDP2-compatible distributed training setup
 
-### Benchmark
-
-Evaluation framework for assessing model performance on German tax law examination questions. Implements automated scoring using GPT-4o as evaluator with statistical analysis and distribution-based metrics.
 
 ## Methodology
 
@@ -40,6 +37,19 @@ The training procedure follows a two-stage approach: (1) continual pretraining o
 - Tokenization server (port 8001) for context management
 - LLM inference endpoints for QA generation
 - SLURM cluster with GPU support for distributed training
+
+## Citation
+
+If you use this work, please cite:
+
+```bibtex
+@article{steuerllm,
+  author = {Wind, Sebastian and Sopa, Jeta and Schmid, Laurin and Jackl, Quirin and Kiefer, Sebastian and Wu, Fei and Mayr, Martin and Köstler, Harald and Wellein, Gerhard and Maier, Andreas and Tayebi Arasteh, Soroosh},
+  title = {SteuerLLM: Local specialized large language model for German tax law analysis},
+  year = {2026},
+  journal = {arxiv preprint}
+}
+```
 
 ## License
 
