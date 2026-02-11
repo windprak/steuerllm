@@ -24,6 +24,8 @@ This repository contains the complete pipeline for developing a specialized larg
 
 The pipeline integrates semantic search (SearXNG), embedding-based retrieval, and LLM-driven synthesis to produce domain-specific question-answer pairs from German tax code (EStG, AO, KStG, etc.).
 
+![Data Generation Pipeline](figures/Data_Gen.png)
+
 ### Training
 
 SLURM-based training configurations for distributed model training using Axolotl framework. Includes:
