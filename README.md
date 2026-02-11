@@ -8,6 +8,14 @@ This repository contains the complete pipeline for developing a specialized larg
 
 ![SteuerLLM Pipeline](figures/steuerLLM_figure.png)
 
+## Model Weights and Datasets
+
+| Resource | Type | Link |
+|----------|------|------|
+| SteuerLLM Instruction Model | Model Weights | [windprak/open_steuerllm](https://huggingface.co/windprak/open_steuerllm) |
+| Pretraining Dataset | Dataset | [windprak/steuerllm_pretraining_dataset](https://huggingface.co/datasets/windprak/steuerllm_pretraining_dataset) |
+| Instruction Dataset | Dataset | [windprak/steuerllm_instruct_dataset](https://huggingface.co/datasets/windprak/steuerllm_instruct_dataset) |
+
 ## Repository Structure
 
 ### Model-Expansion
