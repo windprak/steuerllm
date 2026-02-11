@@ -6,6 +6,11 @@ This repository contains the complete pipeline for developing a specialized larg
 
 ## Repository Structure
 
+### Model-Extension
+
+- A block extension method was used to extend the base model (Mistral Small 24B to 28B)
+- Models can be extended using the Expansion-Script (Expansion-Script/scripts/block_expansion.py)
+
 ### Data-Generation
 
 **Pretraining-Filter**: Domain-specific filtering pipeline for identifying and extracting tax-related content from large-scale web corpora. Implements multi-worker architecture for efficient document classification and preprocessing.
