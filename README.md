@@ -4,7 +4,7 @@
 
 ## Overview
 
-This repository contains the complete pipeline for developing a specialized large language model (LLM) trained on German tax legislation. The system encompasses data generation, model training, and evaluation components designed for legal domain adaptation.
+This repository contains the complete pipeline for developing a specialized large language model (LLM) trained on German tax legislation. The system encompasses data generation and model training components designed for legal domain adaptation. Evaluation components are available in a [separate repository](https://github.com/windprak/steuerllm_benchmark).
 
 ![SteuerLLM Pipeline](figures/steuerLLM_figure.png)
 
