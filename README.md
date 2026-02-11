@@ -1,6 +1,6 @@
 # SteuerLLM: Local specialized large language model for German tax law analysis
 
-**[Try the Demo](https://steuerllm.i5.ai.fau.de/)**
+**Demo: [https://steuerllm.i5.ai.fau.de/](https://steuerllm.i5.ai.fau.de/)**
 
 ## Overview
 
@@ -35,6 +35,10 @@ SLURM-based training configurations for distributed model training using Axolotl
 - Instruction fine-tuning on generated QA datasets
 - DeepSpeed ZeRO-3 optimization for multi-node H100 clusters
 - FSDP2-compatible distributed training setup
+
+### Benchmark
+
+Evaluation framework for assessing model performance on German tax law examination questions. The benchmark repository is available at [https://github.com/windprak/steuerllm_benchmark](https://github.com/windprak/steuerllm_benchmark).
 
 
 ## Methodology
