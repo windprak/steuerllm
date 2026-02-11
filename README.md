@@ -1,5 +1,7 @@
 # SteuerLLM: Local specialized large language model for German tax law analysis
 
+**[Try the Demo](https://steuerllm.i5.ai.fau.de/)**
+
 ## Overview
 
 This repository contains the complete pipeline for developing a specialized large language model (LLM) trained on German tax legislation. The system encompasses data generation, model training, and evaluation components designed for legal domain adaptation.
