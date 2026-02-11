@@ -6,9 +6,9 @@ This repository contains the complete pipeline for developing a specialized larg
 
 ## Repository Structure
 
-### Model-Extension
+### Model-Expansion
 
-- A block extension method was used to extend the base model (Mistral Small 24B to 28B)
+- A block expansion method was used to extend the base model (Mistral Small 24B to 28B)
 - Models can be extended using the Expansion-Script (Expansion-Script/scripts/block_expansion.py)
 
 ### Data-Generation
