@@ -4,6 +4,8 @@ This repository provides a modular, extensible, and high-throughput pipeline for
 
 The architecture supports heterogeneous input formats (e.g., legislative paragraphs, web-sourced snippets, and commentaries) and integrates multiple generation strategies (e.g., context-conditioned prompting, diversification logic, and commentary elicitation). The pipeline enables fine-grained control over input-output (I/O) flows and distributed execution via both multiprocessing and threading.
 
+![SteuerLLM Pipeline](../../figures/steuerLLM_figure.png)
+
 > **Note:** Due to the efficiency-driven development of this project, some components may lack extensive documentation or general-purpose abstraction. The scripts are optimized for throughput rather than modularity. 
 
 ---
@@ -25,10 +27,6 @@ Contains all logic related to QA generation. Subdivided into:
 - **`Thread-Based/`**  
   Lightweight alternative to the process-based pipeline using `ThreadPoolExecutor`. Designed for use cases with pre-retrieved or chunked contextual data.
 
----
-
-### `Benchmark/`
-Evaluation scripts for comparing generated QA pairs against an tax law exam dataset. Supports accuracy analysis, distribution-based scoring, and statistical visualizations.
 
 ---
 
@@ -87,13 +85,6 @@ For instructions and documentation, see https://github.com/searxng/searxng or ht
 
    The result is a `JSONL` file with cleansed and structured question-answer pairs.
 
-5 **Finetuning of the language model**
-   The cleansed data set serves as the basis for the fine-tuning of a domain-specific Large Language Model (LLM), which specialises in the context of German tax law.
-
-6 **Evaluation and benchmarking**
-   Finally, the finetuned model can be evaluated using the benchmark. The evaluation is automated using real exam questions and gold standard solutions. Metrics such as accuracy, median score or log-based scoring functions quantify the model quality. Here GPT-4o is used with AzureOpenAI.
-
----
 
 ## Final Output Format
 
