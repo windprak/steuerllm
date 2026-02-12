@@ -65,7 +65,8 @@ If you use this work, please cite:
   author = {Wind, Sebastian and Sopa, Jeta and Schmid, Laurin and Jackl, Quirin and Kiefer, Sebastian and Wu, Fei and Mayr, Martin and Köstler, Harald and Wellein, Gerhard and Maier, Andreas and Tayebi Arasteh, Soroosh},
   title = {SteuerLLM: Local specialized large language model for German tax law analysis},
   year = {2026},
-  journal = {arxiv preprint}
+  journal = {arXiv preprint arXiv:2602.11081},
+  url = {https://arxiv.org/abs/2602.11081}
 }
 ```
 
