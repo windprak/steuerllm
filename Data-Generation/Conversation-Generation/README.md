@@ -254,18 +254,6 @@ Edit the system and user messages in `src/worker.py`:
 
 Update the field mapping in `parse_file()` function to include additional metadata.
 
-## 📄 License
-
-[Add your license here]
-
-## 🤝 Contributing
-
-[Add contribution guidelines]
-
-## 📧 Support
-
-[Add support contact information]
-
 ## 🧪 Testing
 
 Test the pipeline without a real LLM API using the included mock server:
