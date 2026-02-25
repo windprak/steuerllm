@@ -1,0 +1,147 @@
+base_model: /path/to/your/base_models/mistralsmall8head
+model_type: MistralForCausalLM
+is_mistral_derived_model: true
+load_in_8bit: false
+load_in_4bit: false
+strict: false
+#max_steps: 10000
+
+datasets:
+  - path: "/path/to/your/dataset/fineweb/filtered_deu_Latn_20250106_234459.jsonl/combined1.jsonl"
+    text_column: "text"
+    type: completion
+  - path: "/path/to/your/dataset/fineweb/filtered_deu_Latn_20250107_091744.jsonl/combined2.jsonl"
+    text_column: "text"
+    type: completion
+
+dataset_prepared_path: /path/to/your/dataprepared/steuerllm
+val_set_size: 0.0
+output_dir: /path/to/your/base_output/steuerllm
+#resume_from_checkpoint: /anvme/workspace/unrz103h-helma/base_output/taxmistralsmall8head/checkpoint-5016
+
+sequence_len: 4096
+sample_packing: true
+eval_sample_packing: false
+pad_to_sequence_len: true
+
+unfrozen_parameters:
+  - ^lm_head.weight$
+  - ^model.embed_tokens.weight$
+  - ^model.layers.5.self_attn.q_proj.weight$
+  - ^model.layers.5.self_attn.k_proj.weight$
+  - ^model.layers.5.self_attn.v_proj.weight$
+  - ^model.layers.5.self_attn.o_proj.weight$
+  - ^model.layers.5.mlp.gate_proj.weight$
+  - ^model.layers.5.mlp.up_proj.weight$
+  - ^model.layers.5.mlp.down_proj.weight$
+  - ^model.layers.5.input_layernorm.weight$
+  - ^model.layers.5.post_attention_layernorm.weight$
+  - ^model.layers.11.self_attn.q_proj.weight$
+  - ^model.layers.11.self_attn.k_proj.weight$
+  - ^model.layers.11.self_attn.v_proj.weight$
+  - ^model.layers.11.self_attn.o_proj.weight$
+  - ^model.layers.11.mlp.gate_proj.weight$
+  - ^model.layers.11.mlp.up_proj.weight$
+  - ^model.layers.11.mlp.down_proj.weight$
+  - ^model.layers.11.input_layernorm.weight$
+  - ^model.layers.11.post_attention_layernorm.weight$
+  - ^model.layers.17.self_attn.q_proj.weight$
+  - ^model.layers.17.self_attn.k_proj.weight$
+  - ^model.layers.17.self_attn.v_proj.weight$
+  - ^model.layers.17.self_attn.o_proj.weight$
+  - ^model.layers.17.mlp.gate_proj.weight$
+  - ^model.layers.17.mlp.up_proj.weight$
+  - ^model.layers.17.mlp.down_proj.weight$
+  - ^model.layers.17.input_layernorm.weight$
+  - ^model.layers.17.post_attention_layernorm.weight$
+  - ^model.layers.23.self_attn.q_proj.weight$
+  - ^model.layers.23.self_attn.k_proj.weight$
+  - ^model.layers.23.self_attn.v_proj.weight$
+  - ^model.layers.23.self_attn.o_proj.weight$
+  - ^model.layers.23.mlp.gate_proj.weight$
+  - ^model.layers.23.mlp.up_proj.weight$
+  - ^model.layers.23.mlp.down_proj.weight$
+  - ^model.layers.23.input_layernorm.weight$
+  - ^model.layers.23.post_attention_layernorm.weight$
+  - ^model.layers.29.self_attn.q_proj.weight$
+  - ^model.layers.29.self_attn.k_proj.weight$
+  - ^model.layers.29.self_attn.v_proj.weight$
+  - ^model.layers.29.self_attn.o_proj.weight$
+  - ^model.layers.29.mlp.gate_proj.weight$
+  - ^model.layers.29.mlp.up_proj.weight$
+  - ^model.layers.29.mlp.down_proj.weight$
+  - ^model.layers.29.input_layernorm.weight$
+  - ^model.layers.29.post_attention_layernorm.weight$
+  - ^model.layers.35.self_attn.q_proj.weight$
+  - ^model.layers.35.self_attn.k_proj.weight$
+  - ^model.layers.35.self_attn.v_proj.weight$
+  - ^model.layers.35.self_attn.o_proj.weight$
+  - ^model.layers.35.mlp.gate_proj.weight$
+  - ^model.layers.35.mlp.up_proj.weight$
+  - ^model.layers.35.mlp.down_proj.weight$
+  - ^model.layers.35.input_layernorm.weight$
+  - ^model.layers.35.post_attention_layernorm.weight$
+  - ^model.layers.41.self_attn.q_proj.weight$
+  - ^model.layers.41.self_attn.k_proj.weight$
+  - ^model.layers.41.self_attn.v_proj.weight$
+  - ^model.layers.41.self_attn.o_proj.weight$
+  - ^model.layers.41.mlp.gate_proj.weight$
+  - ^model.layers.41.mlp.up_proj.weight$
+  - ^model.layers.41.mlp.down_proj.weight$
+  - ^model.layers.41.input_layernorm.weight$
+  - ^model.layers.41.post_attention_layernorm.weight$
+  - ^model.layers.47.self_attn.q_proj.weight$
+  - ^model.layers.47.self_attn.k_proj.weight$
+  - ^model.layers.47.self_attn.v_proj.weight$
+  - ^model.layers.47.self_attn.o_proj.weight$
+  - ^model.layers.47.mlp.gate_proj.weight$
+  - ^model.layers.47.mlp.up_proj.weight$
+  - ^model.layers.47.mlp.down_proj.weight$
+  - ^model.layers.47.input_layernorm.weight$
+  - ^model.layers.47.post_attention_layernorm.weight$
+
+
+
+wandb_mode: offline
+wandb_project: fauenterprise
+wandb_entity: your-wandb-username
+wandb_watch:
+wandb_name:
+wandb_log_model:
+
+gradient_accumulation_steps: 1
+micro_batch_size: 8
+num_epochs: 3
+optimizer: adamw_bnb_8bit
+lr_scheduler: cosine
+learning_rate: 1e-5
+
+train_on_inputs: false
+group_by_length: false
+bf16: auto
+fp16:
+tf32: false
+
+gradient_checkpointing: true
+early_stopping_patience:
+local_rank:
+logging_steps: 1
+xformers_attention:
+flash_attention: true
+
+warmup_ratio: 0.06
+#warmup_steps: 0
+evals_per_epoch: 
+eval_table_size:
+saves_per_epoch: 3
+#save_steps: 400
+debug:
+#evaluation_strategy: "no"
+deepspeed: /path/to/your/deepspeed_configs/zero3_bf16.json
+weight_decay: 0.1
+fsdp:
+fsdp_config:
+special_tokens:
+  bos_token: "<s>"
+  eos_token: "</s>"
+  unk_token: "<unk>"
